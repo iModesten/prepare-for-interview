@@ -4,11 +4,22 @@
 
 ## Оглавление репозитория
 
+- [Теория тестирования](#теория-тестирования)
 - [HTTP и API](#http-и-api)
 - [Базы данных и SQL](#базы-данных-и-sql)
 - [Kafka и RabbitMQ](#kafka-и-rabbitmq)
 - [Linux и диагностика](#linux-и-диагностика)
 - [Основы сетей](#основы-сетей)
+
+## Теория тестирования
+
+- [Основы тестирования](01-testing/01-testing-fundamentals.md)
+- [Уровни и виды тестирования](01-testing/02-testing-levels-and-types.md)
+- [Техники тест-дизайна](01-testing/03-test-design-techniques.md)
+- [Процесс тестирования, SDLC и Agile](01-testing/04-test-process-and-sdlc.md)
+- [Тестовая документация](01-testing/05-test-documentation.md)
+- [Исследовательское и риск-ориентированное тестирование](01-testing/06-exploratory-and-risk-based-testing.md)
+- [Вопросы для собеседования](01-testing/07-testing-interview-questions.md)
 
 ## HTTP и API
 
