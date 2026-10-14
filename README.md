@@ -4,11 +4,11 @@
 
 ## Оглавление репозитория
 
-- [HTTP и API](#http-api)
-- [Базы данных и SQL](#databases)
-- [Kafka и RabbitMQ](#message-brokers)
-- [Linux и диагностика](#linux)
-- [Основы сетей](#networking)
+- [HTTP и API](#http-и-api)
+- [Базы данных и SQL](#базы-данных-и-sql)
+- [Kafka и RabbitMQ](#kafka-и-rabbitmq)
+- [Linux и диагностика](#linux-и-диагностика)
+- [Основы сетей](#основы-сетей)
 
 ## HTTP и API
 
