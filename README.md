@@ -41,6 +41,7 @@
 
 ## Linux и диагностика
 
+- **[Linux: минимум для Backend QA — начать здесь](05-linux/00-linux-essential-for-qa.md)**
 - [linux basics](05-linux/01-linux-basics.md)
 - [linux text processing](05-linux/02-linux-text-processing.md)
 - [linux processes](05-linux/03-linux-processes.md)
