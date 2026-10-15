@@ -10,6 +10,7 @@
 - [Kafka и RabbitMQ](#kafka-и-rabbitmq)
 - [Linux и диагностика](#linux-и-диагностика)
 - [Основы сетей](#основы-сетей)
+- [Архитектура Backend](#архитектура-backend)
 
 ## Теория тестирования
 
@@ -63,4 +64,13 @@
 ## Основы сетей
 
 - [network fundamentals](06-networking/01-network-fundamentals.md)
+
+
+## Архитектура Backend
+
+- [Клиент-сервер, монолит и микросервисы](07-architecture/01-client-server-and-microservices.md)
+- [Синхронное и асинхронное взаимодействие](07-architecture/02-service-communication.md)
+- [Timeout, Retry, Idempotency, Circuit Breaker](07-architecture/03-resilience-and-idempotency.md)
+- [Согласованность данных и кэширование](07-architecture/04-data-consistency-and-caching.md)
+- [Вопросы и практические задачи](07-architecture/05-architecture-interview-questions.md)
 
