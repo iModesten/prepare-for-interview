@@ -137,6 +137,10 @@
 
 ## 1. Что такое Linux?
 
+<details>
+<summary>Показать ответ</summary>
+
+
 **Middle**
 
 Linux — ядро операционной системы, на основе которого создаются различные дистрибутивы.
@@ -151,7 +155,13 @@ Linux — ядро операционной системы, на основе к
 
 Для Backend QA Linux используется при работе с серверами, тестовыми стендами, Docker, CI/CD, логами и сетевыми соединениями.
 
+</details>
+
 ## 2. Чем Terminal отличается от Shell?
+
+<details>
+<summary>Показать ответ</summary>
+
 
 **Middle**
 
@@ -163,7 +173,13 @@ Bash и Zsh — примеры Shell.
 
 **Уточнение:** `cd` обычно является встроенной командой оболочки, поскольку меняет её текущую рабочую директорию.
 
+</details>
+
 ## 3. Какие основные директории Linux ты знаешь?
+
+<details>
+<summary>Показать ответ</summary>
+
 
 **Middle**
 
@@ -182,7 +198,13 @@ Bash и Zsh — примеры Shell.
 
 Не все сервисы записывают логи в `/var/log`. Например, контейнерные приложения часто используют stdout/stderr.
 
+</details>
+
 ## 4. Чем абсолютный путь отличается от относительного?
+
+<details>
+<summary>Показать ответ</summary>
+
 
 **Middle**
 
@@ -204,7 +226,13 @@ logs/app.log
 - `..` — родительская директория.
 - `~` — домашняя директория в контексте расширения Shell.
 
+</details>
+
 ## 5. Какие команды используются для навигации?
+
+<details>
+<summary>Показать ответ</summary>
+
 
 **Middle**
 
@@ -220,7 +248,13 @@ cd -                # предыдущая директория
 
 Для быстрого просмотра прав, владельца и размеров файлов удобно использовать `ls -lah`.
 
+</details>
+
 ## 6. Как создать, скопировать, переместить и удалить файл?
+
+<details>
+<summary>Показать ответ</summary>
+
 
 **Middle**
 
@@ -239,7 +273,13 @@ mkdir -p project/config/dev
 
 **Важно:** `rm` обычно удаляет файл без перемещения в корзину. На общих серверах следует избегать непроверенных рекурсивных удалений.
 
+</details>
+
 ## 7. Что означает chmod 755?
+
+<details>
+<summary>Показать ответ</summary>
+
 
 **Middle**
 
@@ -271,7 +311,13 @@ Others: r-x = 5
 chmod 755 script.sh
 ```
 
+</details>
+
 ## 8. Что означают chmod 644 и chmod 600?
+
+<details>
+<summary>Показать ответ</summary>
+
 
 **Middle**
 
@@ -300,7 +346,13 @@ chmod 600 private.txt
 
 Дополнительные механизмы, например ACL, могут влиять на фактический доступ.
 
+</details>
+
 ## 9. Чем права на файл отличаются от прав на директорию?
+
+<details>
+<summary>Показать ответ</summary>
+
 
 **Middle / Senior**
 
@@ -318,7 +370,13 @@ chmod 600 private.txt
 
 **Важный нюанс:** даже если у пользователя есть право чтения файла, он может не суметь открыть его без права `x` на родительских директориях.
 
+</details>
+
 ## 10. Как диагностировать Permission denied?
+
+<details>
+<summary>Показать ответ</summary>
+
 
 **Middle / Senior**
 
@@ -347,7 +405,13 @@ namei -l /path/to/file
 
 **Не следует автоматически применять `chmod 777`.**
 
+</details>
+
 ## 11. Что такое Symbolic Link?
+
+<details>
+<summary>Показать ответ</summary>
+
 
 **Middle**
 
@@ -370,7 +434,13 @@ readlink current
 
 Hard Link отличается тем, что является ещё одним именем того же inode файла.
 
+</details>
+
 ## 12. Что такое Environment Variables и PATH?
+
+<details>
+<summary>Показать ответ</summary>
+
 
 **Middle**
 
@@ -394,11 +464,17 @@ export APP_ENV=test
 
 **Важно:** `export` в текущем Shell не делает переменную постоянной глобальной настройкой системы.
 
+</details>
+
 ---
 
 # Часть 2. Поиск и обработка текста
 
 ## 13. Что такое grep?
+
+<details>
+<summary>Показать ответ</summary>
+
 
 **Middle**
 
@@ -412,7 +488,13 @@ grep 'ERROR' app.log
 
 Для Backend QA это одна из самых полезных команд при поиске ошибок.
 
+</details>
+
 ## 14. Какие основные опции grep ты знаешь?
+
+<details>
+<summary>Показать ответ</summary>
+
 
 **Middle**
 
@@ -435,7 +517,13 @@ grep -c 'ERROR' app.log
 grep -E 'ERROR|WARN' app.log
 ```
 
+</details>
+
 ## 15. Чем grep -F отличается от grep -E?
+
+<details>
+<summary>Показать ответ</summary>
+
 
 **Middle**
 
@@ -457,7 +545,13 @@ grep -E 'ERROR|WARN' app.log
 
 Позволяет найти один из нескольких шаблонов.
 
+</details>
+
 ## 16. Как найти все HTTP 500 в логах?
+
+<details>
+<summary>Показать ответ</summary>
+
 
 **Middle**
 
@@ -487,7 +581,13 @@ grep -E 'status=5[0-9]{2}([[:space:]]|$)' app.log
 
 **Senior:** сначала нужно убедиться в реальном формате логов. Если это JSON, лучше использовать структурированный поиск.
 
+</details>
+
 ## 17. Чем grep отличается от find?
+
+<details>
+<summary>Показать ответ</summary>
+
 
 **Middle**
 
@@ -508,7 +608,13 @@ find . -type f -name '*.log' \
   -exec grep -nH 'ERROR' {} +
 ```
 
+</details>
+
 ## 18. Чем head отличается от tail?
+
+<details>
+<summary>Показать ответ</summary>
+
 
 **Middle**
 
@@ -529,7 +635,13 @@ tail -f app.log
 
 В GNU Linux `tail -F` удобен при ротации файла, поскольку следит за именем и пытается открыть файл повторно.
 
+</details>
+
 ## 19. Что такое Pipe?
+
+<details>
+<summary>Показать ответ</summary>
+
 
 **Middle**
 
@@ -554,7 +666,13 @@ grep -oE 'status=[0-9]{3}' app.log |
 
 Она позволяет посчитать частоту HTTP-статусов при соответствующем формате логов.
 
+</details>
+
 ## 20. Что означают STDIN, STDOUT и STDERR?
+
+<details>
+<summary>Показать ответ</summary>
+
 
 **Middle**
 
@@ -579,7 +697,13 @@ command > combined.log 2>&1
 
 **Уточнение:** порядок перенаправлений имеет значение.
 
+</details>
+
 ## 21. Чем sort отличается от uniq?
+
+<details>
+<summary>Показать ответ</summary>
+
 
 **Middle**
 
@@ -599,7 +723,13 @@ sort file.txt | uniq -c
 sort file.txt | uniq -c | sort -nr
 ```
 
+</details>
+
 ## 22. Что такое sed?
+
+<details>
+<summary>Показать ответ</summary>
+
 
 **Middle**
 
@@ -625,7 +755,13 @@ sed -n '10,20p' app.log
 
 Для диагностики лучше сначала выполнять преобразования без изменения оригинального файла.
 
+</details>
+
 ## 23. Что такое awk?
+
+<details>
+<summary>Показать ответ</summary>
+
 
 **Middle / Senior**
 
@@ -652,7 +788,13 @@ awk '{print $2}' app.log
 awk '$2 == "ERROR" {n++} END {print n+0}' app.log
 ```
 
+</details>
+
 ## 24. Для чего используется jq?
+
+<details>
+<summary>Показать ответ</summary>
+
 
 **Middle / Senior**
 
@@ -680,11 +822,17 @@ jq -c 'select(.status >= 500 and .status < 600)' \
 
 Это надёжнее поиска подстроки, если данные действительно представлены корректным JSON.
 
+</details>
+
 ---
 
 # Часть 3. Процессы и сигналы
 
 ## 25. Что такое Process?
+
+<details>
+<summary>Показать ответ</summary>
+
 
 **Middle**
 
@@ -702,7 +850,13 @@ Process — выполняющийся экземпляр программы.
 
 Одна и та же программа может иметь несколько запущенных экземпляров.
 
+</details>
+
 ## 26. Что такое PID и PPID?
+
+<details>
+<summary>Показать ответ</summary>
+
 
 **Middle**
 
@@ -724,7 +878,13 @@ ps -p 2500 -o pid,ppid,user,cmd
 
 PID может повторно использоваться после завершения процесса.
 
+</details>
+
 ## 27. Чем Process отличается от Thread?
+
+<details>
+<summary>Показать ответ</summary>
+
 
 **Middle**
 
@@ -742,7 +902,13 @@ Thread — поток выполнения внутри процесса.
 - Конкурентности.
 - Потребления CPU.
 
+</details>
+
 ## 28. Как посмотреть все процессы?
+
+<details>
+<summary>Показать ответ</summary>
+
 
 **Middle**
 
@@ -762,7 +928,13 @@ ps -ef
 top
 ```
 
+</details>
+
 ## 29. Как найти процесс приложения?
+
+<details>
+<summary>Показать ответ</summary>
+
 
 **Middle**
 
@@ -780,7 +952,13 @@ ps aux | grep 'bonus-service'
 
 **Важно:** перед действиями с PID нужно убедиться, что найден правильный процесс.
 
+</details>
+
 ## 30. Что означают состояния R, S, D, T и Z?
+
+<details>
+<summary>Показать ответ</summary>
+
 
 **Middle / Senior**
 
@@ -794,7 +972,13 @@ ps aux | grep 'bonus-service'
 
 **Уточнение:** S — нормальное состояние ожидания. Оно не означает, что процесс завис.
 
+</details>
+
 ## 31. Что такое Zombie Process?
+
+<details>
+<summary>Показать ответ</summary>
+
 
 **Middle / Senior**
 
@@ -806,7 +990,13 @@ Zombie — завершившийся процесс, чей родитель е
 
 Нужно изучать поведение родительского процесса.
 
+</details>
+
 ## 32. Что делает команда kill?
+
+<details>
+<summary>Показать ответ</summary>
+
 
 **Middle**
 
@@ -822,7 +1012,13 @@ kill -TERM 2500
 
 Команда не гарантирует немедленное завершение.
 
+</details>
+
 ## 33. Чем SIGTERM отличается от SIGKILL?
+
+<details>
+<summary>Показать ответ</summary>
+
 
 **Middle**
 
@@ -840,7 +1036,13 @@ kill -KILL 2500
 
 **Senior:** для Backend-приложений важно корректно реализовывать Graceful Shutdown.
 
+</details>
+
 ## 34. Что такое Graceful Shutdown?
+
+<details>
+<summary>Показать ответ</summary>
+
 
 **Middle / Senior**
 
@@ -856,7 +1058,13 @@ kill -KILL 2500
 
 SIGTERM позволяет начать такое завершение, но приложение должно поддерживать соответствующую логику.
 
+</details>
+
 ## 35. Что означает Exit Code 137?
+
+<details>
+<summary>Показать ответ</summary>
+
 
 **Middle / Senior**
 
@@ -877,7 +1085,13 @@ SIGTERM позволяет начать такое завершение, но п
 
 Нужно проверить системные логи и сведения контейнерной платформы.
 
+</details>
+
 ## 36. Как проверить потребление CPU и памяти?
+
+<details>
+<summary>Показать ответ</summary>
+
 
 **Middle**
 
@@ -897,7 +1111,13 @@ ps -p 2500 -o pid,%cpu,%mem,rss,vsz,cmd
 
 Показатель RSS отражает резидентную память процесса, а VSZ/VIRT — виртуальное адресное пространство.
 
+</details>
+
 ## 37. Что такое Load Average?
+
+<details>
+<summary>Показать ответ</summary>
+
 
 **Middle / Senior**
 
@@ -913,7 +1133,13 @@ uptime
 
 Он не равен проценту CPU.
 
+</details>
+
 ## 38. Что такое OOM Killer?
+
+<details>
+<summary>Показать ответ</summary>
+
 
 **Middle / Senior**
 
@@ -927,7 +1153,13 @@ uptime
 
 Поэтому даже при наличии свободной памяти на хосте контейнер может быть завершён из-за собственного лимита.
 
+</details>
+
 ## 39. Что такое File Descriptor?
+
+<details>
+<summary>Показать ответ</summary>
+
 
 **Middle / Senior**
 
@@ -953,11 +1185,17 @@ lsof -p 2500
 
 Большое количество неосвобождённых дескрипторов может привести к ошибке `Too many open files`.
 
+</details>
+
 ---
 
 # Часть 4. Сетевые команды и диагностика
 
 ## 40. Чем TCP отличается от UDP?
+
+<details>
+<summary>Показать ответ</summary>
+
 
 **Middle**
 
@@ -972,7 +1210,13 @@ UDP передаёт датаграммы без встроенных гаран
 - PostgreSQL обычно использует TCP.
 - DNS может использовать UDP или TCP.
 
+</details>
+
 ## 41. Как устанавливается TCP-соединение?
+
+<details>
+<summary>Показать ответ</summary>
+
 
 **Middle**
 
@@ -990,7 +1234,13 @@ Client                  Server
 
 Для HTTPS поверх TCP затем выполняется TLS handshake.
 
+</details>
+
 ## 42. Что такое localhost, 127.0.0.1 и 0.0.0.0?
+
+<details>
+<summary>Показать ответ</summary>
+
 
 **Middle**
 
@@ -1002,7 +1252,13 @@ Client                  Server
 
 **Важно:** приложение, слушающее только `127.0.0.1`, обычно недоступно напрямую по внешнему IPv4-адресу.
 
+</details>
+
 ## 43. Как узнать IP-адрес сервера?
+
+<details>
+<summary>Показать ответ</summary>
+
 
 **Middle**
 
@@ -1022,7 +1278,13 @@ ip addr
 ip route
 ```
 
+</details>
+
 ## 44. Как проверить DNS?
+
+<details>
+<summary>Показать ответ</summary>
+
 
 **Middle**
 
@@ -1042,7 +1304,13 @@ getent ahosts example.com
 
 **Уточнение:** dig выполняет DNS-запросы, а getent использует настроенные системные механизмы разрешения имён, которые могут учитывать `/etc/hosts`.
 
+</details>
+
 ## 45. Что проверяет ping?
+
+<details>
+<summary>Показать ответ</summary>
+
 
 **Middle**
 
@@ -1058,7 +1326,13 @@ ping -c 4 example.com
 
 **Важно:** отсутствие ответа не означает, что сервер недоступен по TCP. ICMP может быть заблокирован.
 
+</details>
+
 ## 46. Как проверить открытый TCP-порт?
+
+<details>
+<summary>Показать ответ</summary>
+
 
 **Middle**
 
@@ -1070,7 +1344,13 @@ nc -vz -w 3 example.com 443
 
 Но нельзя утверждать, что HTTPS или бизнес-API работают правильно.
 
+</details>
+
 ## 47. Как посмотреть, какие порты слушает сервер?
+
+<details>
+<summary>Показать ответ</summary>
+
 
 **Middle**
 
@@ -1091,7 +1371,13 @@ ss -lntp
 ss -lntp '( sport = :8080 )'
 ```
 
+</details>
+
 ## 48. Чем Connection refused отличается от Connection timed out?
+
+<details>
+<summary>Показать ответ</summary>
+
 
 **Middle / Senior**
 
@@ -1113,7 +1399,13 @@ ss -lntp '( sport = :8080 )'
 - Проблемы маршрутизации.
 - Удалённая сторона не отвечает.
 
+</details>
+
 ## 49. Как отправить HTTP-запрос через curl?
+
+<details>
+<summary>Показать ответ</summary>
+
 
 **Middle**
 
@@ -1138,7 +1430,13 @@ curl -X POST \
 curl -v https://example.com
 ```
 
+</details>
+
 ## 50. Чем curl -I отличается от curl -i?
+
+<details>
+<summary>Показать ответ</summary>
+
 
 **Middle**
 
@@ -1152,7 +1450,13 @@ curl -v https://example.com
 curl -D - -o /dev/null https://example.com
 ```
 
+</details>
+
 ## 51. Чем HTTP Status отличается от curl Exit Code?
+
+<details>
+<summary>Показать ответ</summary>
+
 
 **Middle / Senior**
 
@@ -1168,7 +1472,13 @@ Curl Exit Code описывает выполнение сетевой опера
 curl --fail-with-body https://example.com
 ```
 
+</details>
+
 ## 52. Как измерить время HTTP-запроса через curl?
+
+<details>
+<summary>Показать ответ</summary>
+
 
 **Senior**
 
@@ -1182,11 +1492,17 @@ curl -sS -o /dev/null \
 
 **Важно:** это в основном накопительные отметки времени, а не независимые продолжительности этапов.
 
+</details>
+
 ---
 
 # Часть 5. Логи, сервисы и диагностика
 
 ## 53. Как проверить состояние systemd-сервиса?
+
+<details>
+<summary>Показать ответ</summary>
+
 
 **Middle**
 
@@ -1208,7 +1524,13 @@ systemctl is-enabled bonus-service.service
 
 **Важно:** активность сервиса не гарантирует функциональную исправность HTTP API.
 
+</details>
+
 ## 54. Как посмотреть логи systemd-сервиса?
+
+<details>
+<summary>Показать ответ</summary>
+
 
 **Middle**
 
@@ -1231,7 +1553,13 @@ journalctl -u bonus-service.service \
   --since "2026-10-09 10:00:00"
 ```
 
+</details>
+
 ## 55. Чем restart отличается от reload и daemon-reload?
+
+<details>
+<summary>Показать ответ</summary>
+
 
 **Middle / Senior**
 
@@ -1243,7 +1571,13 @@ journalctl -u bonus-service.service \
 
 **Важно:** `daemon-reload` не равен рестарту приложения.
 
+</details>
+
 ## 56. Как посмотреть логи Docker-контейнера?
+
+<details>
+<summary>Показать ответ</summary>
+
 
 **Middle**
 
@@ -1263,7 +1597,13 @@ docker logs -f bonus-service
 docker compose logs -f bonus-service
 ```
 
+</details>
+
 ## 57. Как посмотреть логи предыдущего контейнера Kubernetes?
+
+<details>
+<summary>Показать ответ</summary>
+
 
 **Middle / Senior**
 
@@ -1280,7 +1620,13 @@ kubectl logs bonus-service-pod \
 kubectl describe pod bonus-service-pod -n qa
 ```
 
+</details>
+
 ## 58. Что такое CrashLoopBackOff?
+
+<details>
+<summary>Показать ответ</summary>
+
 
 **Middle / Senior**
 
@@ -1296,7 +1642,13 @@ kubectl describe pod bonus-service-pod -n qa
 
 CrashLoopBackOff — симптом, а не первопричина.
 
+</details>
+
 ## 59. Что такое Request ID и Trace ID?
+
+<details>
+<summary>Показать ответ</summary>
+
 
 **Middle**
 
@@ -1312,7 +1664,13 @@ Gateway → Bonus Service → User Service → PostgreSQL
 
 Общий Trace ID помогает исследовать цепочку.
 
+</details>
+
 ## 60. Что делать, если API вернул HTTP 500?
+
+<details>
+<summary>Показать ответ</summary>
+
 
 **Senior**
 
@@ -1328,7 +1686,13 @@ Gateway → Bonus Service → User Service → PostgreSQL
 
 **Важно:** HTTP 500 не означает автоматически, что изменения в БД были отменены.
 
+</details>
+
 ## 61. Чем отличаются 502, 503 и 504?
+
+<details>
+<summary>Показать ответ</summary>
+
 
 **Middle**
 
@@ -1338,7 +1702,13 @@ Gateway → Bonus Service → User Service → PostgreSQL
 
 Для расследования важно определить, какой компонент сформировал ответ.
 
+</details>
+
 ## 62. Как диагностировать Database Timeout?
+
+<details>
+<summary>Показать ответ</summary>
+
 
 **Senior**
 
@@ -1368,7 +1738,13 @@ WHERE state <> 'idle';
 
 **Главное:** Database Timeout не означает автоматически медленный SQL.
 
+</details>
+
 ## 63. Почему Kafka Consumer Lag может расти?
+
+<details>
+<summary>Показать ответ</summary>
+
 
 **Senior**
 
@@ -1383,7 +1759,13 @@ WHERE state <> 'idle';
 
 Проверять нужно не только брокер, но и скорость бизнес-обработки.
 
+</details>
+
 ## 64. Чем RabbitMQ Ready отличается от Unacked?
+
+<details>
+<summary>Показать ответ</summary>
+
 
 **Middle / Senior**
 
@@ -1395,7 +1777,13 @@ Unacked — сообщения, уже доставленные, но ещё н�
 
 Большой Unacked может быть связан с медленной обработкой, зависанием Consumer или настройками Prefetch.
 
+</details>
+
 ## 65. Чем Logs отличаются от Metrics и Traces?
+
+<details>
+<summary>Показать ответ</summary>
+
 
 **Middle / Senior**
 
@@ -1413,6 +1801,8 @@ Unacked — сообщения, уже доставленные, но ещё н�
 
 Для точной диагностики полезно сопоставлять все три источника.
 
+</details>
+
 ---
 
 # Часть 6. Практические задачи Senior QA
@@ -1420,6 +1810,10 @@ Unacked — сообщения, уже доставленные, но ещё н�
 Ниже — ситуационные вопросы. Именно они часто лучше показывают практический опыт, чем проверка знания отдельных команд.
 
 ## Сценарий 1. API недоступен
+
+<details>
+<summary>Показать ответ</summary>
+
 
 **Вопрос:** Backend API перестал отвечать. С чего начнёшь?
 
@@ -1453,9 +1847,15 @@ journalctl -u service-name.service -n 100
 
 Цель — определить, на каком уровне произошёл сбой.
 
+</details>
+
 ---
 
 ## Сценарий 2. API работает на сервере, но не работает извне
+
+<details>
+<summary>Показать ответ</summary>
+
 
 **Вопрос:** На самом сервере `curl localhost:8080` возвращает 200. Снаружи подключиться нельзя. Почему?
 
@@ -1484,9 +1884,15 @@ ip route
 
 **Ключевой момент:** локальная доступность приложения не гарантирует внешнюю доступность.
 
+</details>
+
 ---
 
 ## Сценарий 3. Процесс есть, но API завис
+
+<details>
+<summary>Показать ответ</summary>
+
 
 **Вопрос:** `ps` показывает процесс Backend, но API не отвечает.
 
@@ -1525,9 +1931,15 @@ journalctl -u bonus-service.service -n 100
 
 Если есть признаки блокировки потоков, привлёк бы соответствующие инструменты диагностики приложения.
 
+</details>
+
 ---
 
 ## Сценарий 4. Сервис возвращает 504 после POST
+
+<details>
+<summary>Показать ответ</summary>
+
 
 **Вопрос:** Пользователь получил 504 при выдаче бонуса. Что проверять?
 
@@ -1549,9 +1961,15 @@ journalctl -u bonus-service.service -n 100
 
 **Главное:** не считать timeout доказательством отсутствия бизнес-эффекта.
 
+</details>
+
 ---
 
 ## Сценарий 5. После нагрузки сервис завершился с кодом 137
+
+<details>
+<summary>Показать ответ</summary>
+
 
 **Вопрос:** Что это означает?
 
@@ -1583,9 +2001,15 @@ docker inspect \
 
 **Главное:** не объявлять OOM без подтверждения.
 
+</details>
+
 ---
 
 ## Сценарий 6. PostgreSQL доступна по TCP, но приложение не может подключиться
+
+<details>
+<summary>Показать ответ</summary>
+
 
 **Вопрос:** `nc` на порт 5432 проходит успешно. Почему Backend всё равно получает ошибку?
 
@@ -1614,9 +2038,15 @@ pg_isready -h postgres.internal -p 5432
 
 **Главный принцип:** TCP connectivity и успешная аутентификация в БД — разные проверки.
 
+</details>
+
 ---
 
 ## Сценарий 7. После релиза появился большой Kafka Consumer Lag
+
+<details>
+<summary>Показать ответ</summary>
+
 
 **Вопрос:** Как будешь расследовать?
 
@@ -1646,9 +2076,15 @@ kafka-consumer-groups.sh \
 
 **Важно:** увеличение числа Consumer поможет не всегда. Параллелизм группы ограничивается в том числе количеством партиций.
 
+</details>
+
 ---
 
 ## Сценарий 8. RabbitMQ Queue растёт, хотя Consumer запущены
+
+<details>
+<summary>Показать ответ</summary>
+
 
 **Вопрос:** Что проверять?
 
@@ -1677,9 +2113,15 @@ rabbitmqctl list_queues \
 
 Если Ready растёт, нужно выяснить, почему Consumer не успевают за Producer.
 
+</details>
+
 ---
 
 ## Сценарий 9. Backend постоянно перезапускается
+
+<details>
+<summary>Показать ответ</summary>
+
 
 **Вопрос:** Как диагностировать?
 
@@ -1712,9 +2154,15 @@ kubectl logs bonus-service-pod -n qa --previous
 
 Нужно получить причину предыдущего завершения, а не только текущий факт рестарта.
 
+</details>
+
 ---
 
 ## Сценарий 10. Backend начал потреблять значительно больше памяти
+
+<details>
+<summary>Показать ответ</summary>
+
 
 **Вопрос:** Это Memory Leak?
 
@@ -1735,9 +2183,15 @@ kubectl logs bonus-service-pod -n qa --previous
 
 Один снимок `top` не доказывает Memory Leak.
 
+</details>
+
 ---
 
 ## Сценарий 11. На диске нет места, но в директориях не видно больших файлов
+
+<details>
+<summary>Показать ответ</summary>
+
 
 **Вопрос:** Почему `df` и `du` могут показывать разные данные?
 
@@ -1764,9 +2218,15 @@ lsof +L1
 
 Также причиной могут быть особенности файловой системы и способа подсчёта.
 
+</details>
+
 ---
 
 ## Сценарий 12. Разработчик говорит: «У меня локально работает»
+
+<details>
+<summary>Показать ответ</summary>
+
 
 **Вопрос:** Что сравнивать между локальным окружением и QA-стендом?
 
@@ -1786,6 +2246,8 @@ lsof +L1
 Цель — найти различие, которое влияет на воспроизведение проблемы.
 
 Само утверждение «локально работает» не опровергает дефект на другом окружении.
+
+</details>
 
 ---
 
