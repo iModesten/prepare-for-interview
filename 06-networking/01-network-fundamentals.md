@@ -5,6 +5,15 @@
 
 > **Где читать дальше:** практические команды `curl`, `ss`, `ping`, `dig`, `nc` и разбор ошибок соединения уже находятся в [Linux Networking](../05-linux/04-linux-networking.md). HTTP-методы и статусы — в [HTTP Basics](../02-http-api/01-http-basics.md). Здесь сосредоточимся на том, **как устроена сеть**, а не на повторении этих команд.
 
+**Полезные ссылки c понятным объяснением:**
+- [Простое пособие по сетевой модели OSI для начинающих](https://selectel.ru/blog/osi-for-beginners/)
+- [Сетевые протоколы: базовые понятия и описание самых востребованных правил](https://selectel.ru/blog/network-protocols/)
+- [Руководство по стеку протоколов TCP/IP для начинающих](https://selectel.ru/blog/tcp-ip-for-beginners/)
+- [Отличия TCP- и UDP-протоколов — определяем разницу на примерах](https://selectel.ru/blog/tcp-vs-udp/)
+- [Что такое SSL-протокол](https://selectel.ru/blog/what-is-ssl/)
+- [В чем разница протоколов HTTP и HTTPS](https://selectel.ru/blog/http-https/)
+- [DNS сервер BIND (теория)](https://habr.com/ru/articles/137587/)
+- [Что такое IP-адрес – определение и описание](https://www.kaspersky.ru/resource-center/definitions/what-is-an-ip-address)
 ---
 
 ## Оглавление
