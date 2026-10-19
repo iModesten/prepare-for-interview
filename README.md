@@ -18,6 +18,7 @@
 - [Уровни и виды тестирования](01-testing/02-testing-levels-and-types.md)
 - [Техники тест-дизайна](01-testing/03-test-design-techniques.md)
 - [Процесс тестирования, SDLC и Agile](01-testing/04-test-process-and-sdlc.md)
+- [Модели жизненного цикла разработки (Waterfall, V-model, Agile и другие)](01-testing/09-sdlc-models.md)
 - [Тестовая документация](01-testing/05-test-documentation.md)
 - [Исследовательское и риск-ориентированное тестирование](01-testing/06-exploratory-and-risk-based-testing.md)
 - [Вопросы для собеседования](01-testing/07-testing-interview-questions.md)
