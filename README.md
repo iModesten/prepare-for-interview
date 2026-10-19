@@ -11,6 +11,7 @@
 - [Linux и диагностика](#linux-и-диагностика)
 - [Основы сетей](#основы-сетей)
 - [Архитектура Backend](#архитектура-backend)
+- [Нагрузочное тестирование](#нагрузочное-тестирование)
 - [Git, CI/CD, Docker и Kubernetes](#git-cicd-docker-и-kubernetes)
 
 ## Теория тестирования
@@ -77,6 +78,12 @@
 - [Согласованность данных и кэширование](07-architecture/04-data-consistency-and-caching.md)
 - [Вопросы и практические задачи](07-architecture/05-architecture-interview-questions.md)
 
+## Нагрузочное тестирование
+
+- [Основные метрики, RPS, VU, p95 и типы нагрузки](10-performance/01-performance-basics.md)
+- [k6: сценарии, executors и thresholds](10-performance/02-k6-scenarios.md)
+- [Расчёт профиля нагрузки и анализ результатов](10-performance/03-load-profiles-and-analysis.md)
+- [Вопросы по производительности](10-performance/04-performance-interview-questions.md)
 ## Git, CI/CD, Docker и Kubernetes
 
 - [Git: команды, ветки, Merge, Rebase](08-git-ci-docker/01-git.md)
