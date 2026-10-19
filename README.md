@@ -21,6 +21,7 @@
 - [Тестовая документация](01-testing/05-test-documentation.md)
 - [Исследовательское и риск-ориентированное тестирование](01-testing/06-exploratory-and-risk-based-testing.md)
 - [Вопросы для собеседования](01-testing/07-testing-interview-questions.md)
+- [Scrum теория — оригинальный конспект с иллюстрациями](01-testing/08-scrum.md)
 
 ## HTTP и API
 
