@@ -11,6 +11,7 @@
 - [Linux и диагностика](#linux-и-диагностика)
 - [Основы сетей](#основы-сетей)
 - [Архитектура Backend](#архитектура-backend)
+- [Git, CI/CD, Docker и Kubernetes](#git-cicd-docker-и-kubernetes)
 
 ## Теория тестирования
 
@@ -75,4 +76,12 @@
 - [Timeout, Retry, Idempotency, Circuit Breaker](07-architecture/03-resilience-and-idempotency.md)
 - [Согласованность данных и кэширование](07-architecture/04-data-consistency-and-caching.md)
 - [Вопросы и практические задачи](07-architecture/05-architecture-interview-questions.md)
+
+## Git, CI/CD, Docker и Kubernetes
+
+- [Git: команды, ветки, Merge, Rebase](08-git-ci-docker/01-git.md)
+- [CI/CD: pipeline, jobs и диагностика](08-git-ci-docker/02-ci-cd.md)
+- [Docker: image, container, Compose](08-git-ci-docker/03-docker.md)
+- [Kubernetes для Backend QA](08-git-ci-docker/04-kubernetes-basics.md)
+- [Вопросы для собеседования (24 ответа под спойлерами)](08-git-ci-docker/05-devops-interview-questions.md)
 
