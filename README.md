@@ -12,6 +12,8 @@
 - [Основы сетей](#основы-сетей)
 - [Архитектура Backend](#архитектура-backend)
 - [Автоматизация тестирования](#автоматизация-тестирования)
+- [Нагрузочное тестирование](#нагрузочное-тестирование)
+- [Git, CI/CD, Docker и Kubernetes](#git-cicd-docker-и-kubernetes)
 
 ## Теория тестирования
 
@@ -83,3 +85,17 @@
 - [Playwright: locators, assertions, fixtures](09-automation/02-playwright-fundamentals.md)
 - [API automation, mocks, Page Objects, flaky tests](09-automation/03-api-and-test-architecture.md)
 - [Вопросы по автоматизации](09-automation/04-automation-interview-questions.md)
+## Нагрузочное тестирование
+
+- [Основные метрики, RPS, VU, p95 и типы нагрузки](10-performance/01-performance-basics.md)
+- [k6: сценарии, executors и thresholds](10-performance/02-k6-scenarios.md)
+- [Расчёт профиля нагрузки и анализ результатов](10-performance/03-load-profiles-and-analysis.md)
+- [Вопросы по производительности](10-performance/04-performance-interview-questions.md)
+## Git, CI/CD, Docker и Kubernetes
+
+- [Git: команды, ветки, Merge, Rebase](08-git-ci-docker/01-git.md)
+- [CI/CD: pipeline, jobs и диагностика](08-git-ci-docker/02-ci-cd.md)
+- [Docker: image, container, Compose](08-git-ci-docker/03-docker.md)
+- [Kubernetes для Backend QA](08-git-ci-docker/04-kubernetes-basics.md)
+- [Вопросы для собеседования (24 ответа под спойлерами)](08-git-ci-docker/05-devops-interview-questions.md)
+
