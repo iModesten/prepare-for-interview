@@ -11,6 +11,7 @@
 - [Linux и диагностика](#linux-и-диагностика)
 - [Основы сетей](#основы-сетей)
 - [Архитектура Backend](#архитектура-backend)
+- [Автоматизация тестирования](#автоматизация-тестирования)
 
 ## Теория тестирования
 
@@ -76,3 +77,9 @@
 - [Согласованность данных и кэширование](07-architecture/04-data-consistency-and-caching.md)
 - [Вопросы и практические задачи](07-architecture/05-architecture-interview-questions.md)
 
+## Автоматизация тестирования
+
+- [TypeScript для QA: типы и асинхронность](09-automation/01-typescript-for-tests.md)
+- [Playwright: locators, assertions, fixtures](09-automation/02-playwright-fundamentals.md)
+- [API automation, mocks, Page Objects, flaky tests](09-automation/03-api-and-test-architecture.md)
+- [Вопросы по автоматизации](09-automation/04-automation-interview-questions.md)
