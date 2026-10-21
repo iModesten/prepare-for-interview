@@ -68,7 +68,8 @@
 
 ## Основы сетей
 
-- [network fundamentals](06-networking/01-network-fundamentals.md)
+- [Основы сетей: OSI, TCP/IP, адресация и маршрутизация](06-networking/01-network-fundamentals.md)
+- **[Что происходит при открытии сайта: от URL и DNS до DOM](06-networking/02-what-happens-when-opening-website.md)**
 
 
 ## Архитектура Backend
