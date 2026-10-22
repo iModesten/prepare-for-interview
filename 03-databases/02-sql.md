@@ -767,6 +767,8 @@ JOIN paid_orders p
 
 PostgreSQL и MySQL 8.4 поддерживают CTE.
 
+**Не путать с VIEW:** CTE используется в одном SQL-операторе, а VIEW — сохранённый объект БД. Подробное объяснение с примерами и сравнением с MATERIALIZED VIEW — в [отдельной теме](09-views-and-materialized-views.md).
+
 ---
 
 ## 12. Оконные функции (Window Functions)

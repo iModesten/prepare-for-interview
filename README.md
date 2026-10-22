@@ -47,6 +47,7 @@
 - [indexes](03-databases/06-indexes.md)
 - [database testing](03-databases/07-database-testing.md)
 - [interview questions](03-databases/08-interview-questions.md)
+- **[VIEW и MATERIALIZED VIEW: понятное объяснение и примеры](03-databases/09-views-and-materialized-views.md)**
 
 ## Kafka и RabbitMQ
 
