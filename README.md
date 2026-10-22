@@ -14,6 +14,7 @@
 - [Автоматизация тестирования](#автоматизация-тестирования)
 - [Нагрузочное тестирование](#нагрузочное-тестирование)
 - [Git, CI/CD, Docker и Kubernetes](#git-cicd-docker-и-kubernetes)
+- [Основы ИИ: LLM, инструменты и MCP](#основы-ии-llm-инструменты-и-mcp)
 
 ## Теория тестирования
 
@@ -101,3 +102,7 @@
 - [Kubernetes для Backend QA](08-git-ci-docker/04-kubernetes-basics.md)
 - [Вопросы для собеседования (24 ответа под спойлерами)](08-git-ci-docker/05-devops-interview-questions.md)
 
+
+## Основы ИИ: LLM, инструменты и MCP
+
+- **[ИИ для QA: модели, промпты, Tool Calling, агенты, MCP, RAG и риски](11-ai/01-ai-llm-tools-mcp-basics.md)**
